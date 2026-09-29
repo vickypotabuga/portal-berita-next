@@ -1,25 +1,4 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* paksa konten berita selalu hitam pekat */
-.berita-content * { color: #18181b!important; }
-.berita-content p { margin-bottom: 16px; line-height: 1.8; }
-.berita-content h2,.berita-content h3 { font-weight: 900!important; color: #000!important; margin: 28px 0 12px; }
-.berita-content img { border-radius: 12px; margin: 16px 0; }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{font-family:Inter,system-ui,sans-serif}
